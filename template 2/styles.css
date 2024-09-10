@@ -1,0 +1,191 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 4px solid #0056b3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-brand h1 {
+    font-size: 1.8rem;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-menu a:hover {
+    background: #0056b3;
+}
+
+.nav-menu-active {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007BFF;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-top: 4px solid #0056b3;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu-active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 1rem;
+    }
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    border-left: 4px solid #FF5722; /* Vibrant orange accent line */
+}
+
+.intro h1 {
+    color: #FF5722; /* Matching border color for consistency */
+    font-size: 2rem; /* Appropriate size for sub-heading */
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center align heading */
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+.intro p {
+    font-size: 1rem;
+    font-weight: 550;
+    color: #333; /* Dark gray text for readability */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    color: #007BFF; /* A bright blue for prominence */
+    font-size: 2rem; /* Larger size for major sections */
+    font-weight: 700; /* Bold weight for emphasis */
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    display: inline-block; /* Makes the border only as wide as the text */
+    border-bottom: 3px solid #0056b3; /* Darker blue border for added emphasis */
+    text-transform: uppercase; /* Uppercase for a more striking appearance */
+}
+
+h3 {
+    color: #FF5722; /* A vibrant orange for contrast */
+    font-size: 2rem; /* Slightly smaller size for sub-sections */
+    font-weight: 600; /* Semi-bold weight for prominence */
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    display: inline-block; /* Makes the border only as wide as the text */
+    border-bottom: 2px solid #e64a19; /* Darker orange border for definition */
+    text-transform: capitalize; /* Capitalize for a clean look */
+}
+
+.post-graduate, .graduate {
+    margin-bottom: 2rem;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    width: calc(25% - 1.5rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    font-size: 1.1rem;
+}
+
+.course-card:hover {
+    background: #eaf6ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.graduate-subsection {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        width: 100%;
+    }
+}
+
+footer {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 4px solid #0056b3;
+}

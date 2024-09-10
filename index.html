@@ -3,129 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Courses</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Template Selection</title>
+    <style>
+        /* Reset some default styles */
+        body, h1 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Additional styles for Question 2 */
+        .question-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+
+        .question-section h2 {
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="navbar-container">
-            <a href="#hero" class="logo">College</a>
-            <nav class="navbar-nav">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#hero">About us</a></li>
-                    <li><a href="#courses">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <div class="container">
+        <h1>Select a Template</h1>
+
+        <div class="question-section">
+            <h2>Question 2</h2>
+            <div class="button-group">
+                <a href="template 1/index.html" class="button">Template 1 Details</a>
+                <a href="#template2-details" class="button">Template 2 Details</a>
             </div>
         </div>
-    </header>
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Our College</h1>
-            <p>Explore the diverse range of courses we offer.</p>
-        </div>
-    </section>
-    <section id="courses" class="course-list">
-        <div class="post-graduate">
-            <div class="section-header">
-                <h2>Post Graduate Courses</h2>
-            </div>
-            <div class="course-cards">
-                <div class="course-card">Bengali</div>
-                <div class="course-card">Botany</div>
-                <div class="course-card">Chemistry</div>
-                <div class="course-card">Computer Science</div>
-                <div class="course-card">Environmental Science</div>
-                <div class="course-card">Geography</div>
-                <div class="course-card">Geology</div>
-                <div class="course-card">Zoology</div>
-            </div>
-        </div>
-       
-        <div class="graduate">
-            <div class="section-header">
-                <h2>Graduate Courses</h2>
-            </div>
-
-            <div class="graduate-sections">
-                <div class="graduate-section">
-                    <h3>Arts</h3>
-                    <div class="course-cards">
-                    <div class="course-card">Bengali</div>
-                    <div class="course-card">Communicative English</div>
-                    <div class="course-card">Hindi</div>
-                    <div class="course-card">Journalism</div>
-                    <div class="course-card">Sanskrit</div>
-                    <div class="course-card">Sociology</div>
-                    <div class="course-card">History</div>
-                    <div class="course-card">Philosophy</div>
-                    <div class="course-card">English</div>
-                    <div class="course-card">Political Science</div>
-                    </div>
-                </div>
-
-
-                <div class="graduate-section">
-                    <h3>Science</h3>
-                    <div class="course-cards">
-                        <div class="course-card">Botany</div>
-                    <div class="course-card">Physics</div>
-                    <div class="course-card">Computer Science</div>
-                    <div class="course-card">Zoology</div>
-                    <div class="course-card">Mathematics</div>
-                    <div class="course-card">Microbiology</div>
-                    <div class="course-card">Geology</div>
-                    <div class="course-card">Chemistry</div>
-                    <div class="course-card">Microbiology</div>
-                    <div class="course-card">Electronics</div>
-                    <div class="course-card">Bio-Chemistry</div>
-                    <div class="course-card">Environmental Science</div>
-                    </div>
-                </div>
-
- 
-                <div class="graduate-sections">
-                    <div class="graduate-section">
-                        <h3>Diploma & Certificate Courses</h3>
-                        <div class="course-cards">
-                            <div class="course-card">Safety Engineering</div>
-                            <div class="course-card">Basic Computer Course</div>
-                            <div class="course-card">Soft Skills</div>
-                            <div class="course-card">Travel & Tourism</div>
-                            <div class="course-card">Human Rights</div>
-                            <div class="course-card">Herbal Plant</div>
-                            <div class="course-card">Bioinformatics</div>
-                            <div class="course-card">Basic Electronics</div>
-                        </div>
-                    </div>
-
-
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 College. All rights reserved.</p>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script>
-        // JavaScript to toggle menu on mobile view
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.querySelector('.navbar-nav').classList.toggle('active');
-        });
-    </script>
+    </div>
 </body>
 </html>
