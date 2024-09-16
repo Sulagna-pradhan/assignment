@@ -205,6 +205,47 @@ section.about p {
     color: rgb(31, 115, 148); 
 }
   
+.cards .card h4 {
+  font-size: 1.5rem;               /* Larger than regular text for emphasis */
+  font-weight: 700;                /* Bold for clarity */
+  color: #333;                     /* Darker color for better readability */
+  margin-bottom: 10px;             /* Space below the heading */
+  text-align: center;              /* Center the heading text */
+  letter-spacing: 0.5px;           /* Slight spacing for a cleaner look */
+  line-height: 1.2;                /* Tighten the line spacing for a more compact look */
+}
+
+.cards .card p.adm {
+  font-weight: 600;               /* Make the text bold */
+  font-size: 1rem;              /* Slightly larger than normal text */
+  color: #333;                    /* Darker color for emphasis */
+  text-align: center;             /* Center the text */
+  margin-bottom: 15px;            /* Add space below the paragraph */
+  padding-top: 10px;              /* Add space above for separation */
+  letter-spacing: 0.5px;          /* Slight letter spacing for readability */
+  border-top: 1px solid #ddd;     /* Create a visual separation with a border */
+  padding-top: 15px;              /* Padding above the paragraph for more separation */
+}
+
+.cards .card ul {
+  border-top: 1px solid #ddd;   
+  list-style-type: disc;            /* Use disc bullets for consistency */
+  padding-left: 20px;               /* Add left padding for proper alignment */
+  margin-top: 10px;                 /* Create space between the paragraph and the list */
+  margin-bottom: 0;                 /* Reduce bottom margin for balance */
+  text-align: left;                 /* Left-align the list items */
+  color: #555;                      /* Match the text color to your paragraph */
+  font-size: 1rem;                  /* Same font size as the paragraph */
+  line-height: 1.6;                 /* Match the line height */
+  letter-spacing: 0.5px;            /* Consistent letter spacing */
+}
+
+.cards .card ul li {
+  margin-bottom: 8px;               /* Add some space between list items */
+  padding-left: 5px;                /* Add slight padding to give breathing space between bullet and text */
+  font-weight: 400;                 /* Match the font-weight of the paragraph */
+}
+
 section.about .college-info,
 section.about .mission-vision {
     margin: 0 auto; 
