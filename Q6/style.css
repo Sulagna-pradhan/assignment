@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #eaeaea; /* Light gray background */
+    background-color: #eaeaea;
 }
 
 /* Header Styling */
 header {
-    background-color: #333; /* Dark gray background */
-    color: #f9f9f9; /* Off-white text color */
+    background-color: #333; 
+    color: #f9f9f9; 
     padding: 2em;
     text-align: center;
 }
@@ -24,18 +24,18 @@ header h1 {
 .hero {
     text-align: center;
     padding: 60px;
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #f5f5f5;
 }
 
 .hero h2 {
     font-size: 2.5em;
-    color: #444; /* Darker gray text */
+    color: #444; 
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2em;
-    color: #666; /* Medium gray text */
+    color: #666; 
     max-width: 700px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -43,7 +43,7 @@ header h1 {
 
 .courses-intro p {
     font-size: 1.1em;
-    color: #666; /* Medium gray text */
+    color: #666; 
     max-width: 700px;
     margin: 20px auto;
 }
@@ -52,8 +52,8 @@ header h1 {
 .explore-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #007bff; /* Blue background */
-    color: #f9f9f9; /* Off-white text color */
+    background-color: #007bff; 
+    color: #f9f9f9; 
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
@@ -62,15 +62,15 @@ header h1 {
 }
 
 .explore-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 /* Button Styling for anchor tag */
 .contact-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #007bff; /* Blue background */
-    color: #f9f9f9; /* Off-white text color */
+    background-color: #007bff; 
+    color: #f9f9f9;
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
@@ -79,14 +79,14 @@ header h1 {
 }
 
 .contact-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 /* Courses Section */
 .courses-section {
     padding: 40px;
     text-align: center;
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ header h1 {
 
 /* Course Card Styling */
 .course-card {
-    background-color: #fff; /* White background */
+    background-color: #fff; 
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -112,12 +112,12 @@ header h1 {
 
 .course-card h3 {
     font-size: 1.5em;
-    color: #333; /* Dark gray text */
+    color: #333; 
 }
 
 .course-card p {
     font-size: 1.1em;
-    color: #666; /* Medium gray text */
+    color: #666; 
     margin: 10px 0;
 }
 
@@ -134,8 +134,8 @@ header h1 {
 .course-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Blue background */
-    color: #f9f9f9; /* Off-white text color */
+    background-color: #007bff; 
+    color: #f9f9f9;
     text-decoration: none;
     font-size: 1.1em;
     border-radius: 5px;
@@ -143,13 +143,13 @@ header h1 {
 }
 
 .course-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 /* Footer Styling */
 footer {
-    background-color: #333; /* Dark gray background */
-    color: #f9f9f9; /* Off-white text color */
+    background-color: #333; 
+    color: #f9f9f9; 
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -207,14 +207,14 @@ footer p {
 .course-info {
     padding: 40px;
     text-align: center;
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #f5f5f5; 
 }
 
 .course-table {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
-    background-color: #fff; /* White background */
+    background-color: #fff; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -226,8 +226,8 @@ footer p {
 }
 
 .course-table th {
-    background-color: #007bff; /* Blue background */
-    color: #f9f9f9; /* Off-white text color */
+    background-color: #007bff; 
+    color: #f9f9f9; 
     font-weight: bold;
 }
 
