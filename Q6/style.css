@@ -104,6 +104,15 @@ header h1 {
     margin: 10px 0;
 }
 
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+
+
 /* Button for Course Cards */
 .course-btn {
     display: inline-block;
