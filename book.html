@@ -28,38 +28,56 @@
             margin: 0;
         }
 
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            padding: 15px;
+            width: 250px;
+            border-radius: 8px;
+            overflow: hidden;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+            transition: transform 0.2s;
         }
 
-        th {
-            background-color: #555;
-            color: white;
+        .card:hover {
+            transform: scale(1.05);
         }
 
-        img {
-            width: 100px;
+        .card img {
+            width: 100%;
             height: auto;
         }
 
-        a {
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
             text-decoration: none;
-            color: #007BFF;
+            border-radius: 5px;
             font-weight: bold;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .card-content a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -69,28 +87,31 @@
         <h1>Book Review</h1>
     </header>
 
-    <table>
-        <tr>
-            <th>Book Name</th>
-            <th>Cover Image</th>
-            <th>Review Link</th>
-        </tr>
-        <tr>
-            <td>The Great Gatsby</td>
-            <td><img src="https://m.media-amazon.com/images/I/61kRkfsIMUL._AC_UF1000,1000_QL80_.jpg" alt="The Great Gatsby"></td>
-            <td><a href="https://example.com/great-gatsby-review">Click here to get review</a></td>
-        </tr>
-        <tr>
-            <td>1984</td>
-            <td><img src="https://m.media-amazon.com/images/I/61kRkfsIMUL._AC_UF1000,1000_QL80_.jpg" alt="1984"></td>
-            <td><a href="https://example.com/1984-review">Click here to get review</a></td>
-        </tr>
-        <tr>
-            <td>To Kill a Mockingbird</td>
-            <td><img src="https://m.media-amazon.com/images/I/61kRkfsIMUL._AC_UF1000,1000_QL80_.jpg" alt="To Kill a Mockingbird"></td>
-            <td><a href="https://example.com/mockingbird-review">Click here to get review</a></td>
-        </tr>
-    </table>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/TheGreatGatsby_1925jacket.jpeg" alt="The Great Gatsby">
+            <div class="card-content">
+                <h3>The Great Gatsby</h3>
+                <a href="https://example.com/great-gatsby-review">Click here to get review</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/1984first.jpg" alt="1984">
+            <div class="card-content">
+                <h3>1984</h3>
+                <a href="https://example.com/1984-review">Click here to get review</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/79/To_Kill_a_Mockingbird.JPG" alt="To Kill a Mockingbird">
+            <div class="card-content">
+                <h3>To Kill a Mockingbird</h3>
+                <a href="https://example.com/mockingbird-review">Click here to get review</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
